@@ -1,0 +1,19 @@
+Installing the RPM Package Manager 
+In order to install the software, you must install RPM - the RPM Package Manager. Since you can't install rpm initially with rpm, it and a few requisite tools (gzip, bzip2, and patch) are available in installp format. You must install the installp image of RPM, which is available from the Linux Affinity image repository as installp/ppc/rpm.rte. You may also download the rpm installp image via a Netscape browser by holding down the shift key and the left mouse-button here. You install rpm as root as in the following example: 
+
+ installp -qacXgd rpm.rte rpm.rte
+The installation will take a few minutes because it needs to gather information about the shared libraries already installed on the system. 
+
+Using the RPM Package Manager
+Full information on using RPM can be found at www.rpm.org. The basic installation operations are: 
+
+-i: install 
+-e: erase 
+-q: query 
+--help: help 
+
+For example, if you were interested in installing the package which provides the less page program, you would access the RPM package for less (as less-374-2.aix5.1.rpm.ppc in this example), then invoke rpm:
+
+rpm -i less-374-2.aix5.1.rpm.ppc
+You can install multiple packages at one time, as in rpm -i * It is a good idea when doing that to use the verbose (-v) flag; otherwise, rpm does not give any feedback unless there are errors. 
+
