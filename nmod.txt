@@ -1,0 +1,3 @@
+to start it same way set env variable:
+
+NMON=cmdnt 
