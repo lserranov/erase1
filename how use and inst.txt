@@ -16,4 +16,4 @@ For example, if you were interested in installing the package which provides the
 
 rpm -i less-374-2.aix5.1.rpm.ppc
 You can install multiple packages at one time, as in rpm -i * It is a good idea when doing that to use the verbose (-v) flag; otherwise, rpm does not give any feedback unless there are errors. 
-
+aa
